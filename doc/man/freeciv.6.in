@@ -9,7 +9,7 @@
 .\"   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 .\"   GNU General Public License for more details.
 .\"
-.TH FREECIV 6 "May 11th 2021"
+.TH FREECIV 6 "May 12th 2021"
 .SH NAME
 freeciv \- The Freeciv game (overview)
 .SH SYNOPSIS
@@ -114,10 +114,13 @@ Feel free to use it as you wish.
 .IR freeciv-ruledit (6)
 .IR freeciv-ruleup (6)
 .IR freeciv-manual (6)
+.IR freeciv-gtk2 (6)
+.IR freeciv-gtk3 (6)
 .IR freeciv-gtk3.22 (6)
 .IR freeciv-qt (6)
 .IR freeciv-sdl2 (6)
 .IR freeciv-mp-cli (6)
+.IR freeciv-mp-gtk2 (6)
 .IR freeciv-mp-gtk3 (6)
 .IR freeciv-mp-qt (6)
 and the Client Manual and the Server Manual on the Freeciv website.
