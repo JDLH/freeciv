@@ -54,12 +54,12 @@ AC_DEFUN([FC_QT5_DARWIN_COMPILETEST],
     [qt5_headers=yes
      FC_QT5_CPPFLAGS="${FC_QT5_CPPFLAGS}${CPPFADD}"],
     [CXXFLAGS_SAVE="${CXXFLAGS}"
-     CXXFLAGS="${CXXFLAGS} -fPIC"
+     CXXFLAGS="${CXXFLAGS} -fPIC -std=c++11"
      AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[#include <QApplication>]],
 [[int a; QApplication app(a, 0);]])],
       [qt5_headers=yes
        FC_QT5_CPPFLAGS="${FC_QT5_CPPFLAGS}${CPPFADD}"
-       FC_QT5_CXXFLAGS="${FC_QT5_CXXFLAGS} -fPIC"])
+       FC_QT5_CXXFLAGS="${FC_QT5_CXXFLAGS} -fPIC -std=c++11"])
      CXXFLAGS="${CXXFLAGS_SAVE}"])
 
   CPPFLAGS="$CPPFLAGS_SAVE"
