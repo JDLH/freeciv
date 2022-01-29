@@ -325,6 +325,7 @@ fc_x_save_CFLAGS="$CFLAGS"
 CFLAGS="$CFLAGS $X_CFLAGS"
 AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
 $fc_x_compile
+#include <stdlib.h>
 #include <X11/Xfuncproto.h>
   ]], [[
 exit (0)
@@ -374,6 +375,7 @@ CFLAGS="$CFLAGS $X_CFLAGS $X_LIBS $X_PRE_LIBS -lXaw -lXt -lX11 $X_EXTRA_LIBS"
 AC_RUN_IFELSE([AC_LANG_SOURCE([[
 $fc_x_works
 $fc_x_compile
+#include <stdlib.h>
 #include <X11/Xfuncproto.h>
 #include <X11/Intrinsic.h>
 #include <X11/StringDefs.h>
